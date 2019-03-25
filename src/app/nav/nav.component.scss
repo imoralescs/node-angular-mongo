@@ -1,0 +1,34 @@
+.header {
+    height: 60px;
+    background: #5f98cd;
+    display: block;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+        margin: 0 1em;
+        vertical-align: top;
+    }
+
+    &__action {
+        display: inline-block;
+        vertical-align: top;
+        a {
+            display: inline-block;
+            padding: .6em;
+            border: 2px solid #f7f7f7;
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            line-height: 1;
+            color: #FFF;
+            text-decoration: none;
+        }
+    }
+}
