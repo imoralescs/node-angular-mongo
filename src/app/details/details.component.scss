@@ -1,0 +1,21 @@
+.details {
+    &__back {
+        margin: 12px;
+        display: inline-block;
+        text-decoration: none;
+        color: #5f98cd;
+        font-weight: bold;
+        font-size: 16px;
+        &:hover {
+            text-decoration: overline;
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__description {
+        padding: 1em;
+    }
+}

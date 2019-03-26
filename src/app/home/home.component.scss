@@ -20,5 +20,46 @@
     &__description {
         font-size: 16px;
         padding: 0 .4em .4em;
+        display: block;
+        display: -webkit-box;
+        max-width: 400px;
+        height: 4.4em;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.4;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__more-info {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        padding: 14px 20px;
+        letter-spacing: .5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 16px;
+        border-radius: 2px;
+        transition: .3s ease-out;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        color: white;
+        display: inline-block;
+        overflow: visible;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: none;
+        width: auto;
+        vertical-align: middle;
+        cursor: pointer;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+        display: block;
+        background-color: #5f98cd;
     }
 }

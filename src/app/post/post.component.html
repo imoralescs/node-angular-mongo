@@ -1,0 +1,21 @@
+<div class='post'>
+  <h2 class='post__title'>Create Post</h2>
+  <form class='post__form' [formGroup]='postForm' (ngSubmit)='addPost(postForm.value)' >
+    <div class='post__form-group'>
+      <label class='post__label'>Title
+        <input class='post__text-input' type='text' name='title' [formControl]="postForm.controls['title']">
+      </label>
+    </div>
+    <div class='post__form-group'>
+      <label class='post__label'>Url
+        <input class='post__text-input' type='url' name='url' [formControl]="postForm.controls['url']">
+      </label>
+    </div>
+    <div class='post__form-group'>
+      <label class='post__label'>Description
+        <textarea class='post__text-area' name='description' id='description' [formControl]="postForm.controls['description']"></textarea>
+      </label>
+    </div>
+    <input class='post__btn' type='submit' value='Add Post' [disabled]='!postForm.valid'>
+  </form>
+</div>
